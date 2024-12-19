@@ -1,0 +1,197 @@
+.fundoDaHeaderResponsive
+{
+  display: none;
+}
+
+.textMidServico 
+{
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 28vw;
+  font-size: 1.1rem;
+  color: darkslateblue;
+}
+
+.fundoDaHeader
+{
+    display: flex;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    width: 100vw;
+}
+
+.containerHeaderServicos
+{
+    margin-top: 10vw;
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.textHeaderServicos
+{
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    width: 70%;
+}
+
+.fundoDoBody
+{
+    display: flex;
+    position: absolute;
+    top: 160vh;
+    z-index: -2;
+    width: 100vw;
+}
+
+
+
+
+/* Definindo as cores de destaque */
+.ServicoshighlightAqua {
+    color: #198168;
+  }
+  
+  .ServicoshighlightOrange {
+    color: #f6794a;
+  }
+  
+  /* Ajustando o espaçamento da seção */
+  .Servicossection {
+    margin-top: 70%;
+  }
+  
+  
+  
+  .ServicosbgContent img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+  /* Layout responsivo para a seção dos cards */
+  .ServicoscontentSection {
+    margin-top: 50vw;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    grid-template-rows: auto auto; /* 2 linhas */
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .ServicoscontentSection div:nth-child(4) {
+    margin-left: 50%;
+  }
+
+  
+  .ServicoscontentSection div:nth-child(5) {
+    margin-left: 50%;
+  }
+  /* Quando a tela for menor que 1200px, ajusta para 2 colunas */
+  @media (max-width: 800px) {
+    .fundoDaHeader
+{
+    display: flex;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    width: 120vw;
+    overflow-x: clip;
+}
+.fundoDaHeaderResponsive
+{
+  display: flex;
+  position: absolute;
+  top: 0;
+  z-index: -2;
+  width: 120vw;
+  overflow-x: clip;
+}
+
+.hospitalimg
+{
+  height: 40vw;
+}
+
+.containerHeaderServicos
+{
+    margin-top: 10vw;
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.textHeaderServicos
+{
+    display: flex;
+    position: relative;
+    font-size: 0.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    width: 70%;
+}
+
+.fundoDoBody
+{
+    display: flex;
+    position: absolute;
+    top: 180vh;
+    z-index: -2;
+    width: 100vw;
+    height: 130%;
+}
+
+.ServicoscontentSection div:nth-child(4) {
+  margin-left:auto;
+}
+
+
+.ServicoscontentSection div:nth-child(5) {
+  margin-left: auto;
+}
+
+  }
+  
+  /* Quando a tela for menor que 800px, ajusta para 1 coluna */
+  @media (max-width: 800px) {
+    .ServicoscontentSection {
+      grid-template-columns: 1fr; /* 1 coluna */
+    }
+  }
+
+/* //  {[
+    {
+      front: "Renda Brasil",
+      back: "Voltado para garantir renda mínima às famílias em situação de vulnerabilidade, promovendo inclusão social.",
+    },
+    {
+      front: "Assistência Social",
+      back: "Atendimento e proteção a brasileiros em vulnerabilidade social, assegurando direitos e acesso a serviços essenciais.",
+    },
+    {
+      front: "Educação",
+      back: "Sistema público de ensino gratuito no Brasil, abrangendo desde a educação básica até o ensino superior.",
+    },
+    {
+      front: "Auxílio Moradia",
+      back: "Programa brasileiro que oferece apoio habitacional para famílias de baixa renda, garantindo moradia digna.",
+    },
+    {
+      front: "Saúde",
+      back: "O Sistema Único de Saúde (SUS) oferece atendimento gratuito a todos os brasileiros, com foco na prevenção e tratamento.",
+    },
+  ] */

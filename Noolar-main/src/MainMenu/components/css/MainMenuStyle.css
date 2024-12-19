@@ -1,0 +1,951 @@
+/* MainMenuStyle.css */
+
+body {
+  margin: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+}
+
+.carroso_slide {
+  border-radius: 3vw;
+  margin: auto;
+  display: flex;
+  position: relative;
+  width: 47vw;
+  /* Mantém o tamanho relativo */
+  height: 53vh;
+  /* Mantém o tamanho relativo */
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+
+.swiperRadius {
+  border-radius: 1vw;
+}
+
+.textCarrosel {
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 2vw;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 85%;
+}
+
+.textCarrosel h2 {
+  font-size: 2vw;
+  font-weight: bolder;
+}
+
+.textCarrosel h4 {
+  font-size: 1.6vw;
+  font-weight: 500;
+  letter-spacing: 0.15cap;
+}
+
+.textCarrosel button {
+  font-size: 1.6vw;
+  font-weight: 500;
+  letter-spacing: 0.15cap;
+}
+
+.textCarroso {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 1vw;
+  width: 60%;
+  justify-content: center;
+  align-items: start;
+  margin-left: 10%;
+}
+
+.textCarroso h2 {
+  font-size: 1.8vw;
+  font-weight: bolder;
+  width: 80%;
+}
+
+.textCarroso h4 {
+  font-size: 1.3vw;
+  font-weight: 500;
+  width: 80%;
+  letter-spacing: 0.15cap;
+  letter-spacing: 1px;
+}
+
+.imageCarrosel {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20vw;
+  right: 1vw;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {}
+
+.textCarrosel {
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 2vw;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+}
+
+.textCarrosel h2 {
+  font-size: 1.5vw;
+  font-weight: bolder;
+}
+
+.textCarrosel h4 {
+  font-size: 1vw;
+  font-weight: 500;
+  letter-spacing: 0.15cap;
+
+}
+
+.textCarrosel button {
+  width: 100%;
+  font-size: 1vw;
+  margin-top: -1vw;
+  font-weight: 500;
+  letter-spacing: 0.15cap;
+}
+
+.bgSlide {
+  z-index: -100;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+/* Se as setas estiverem usando ícones, você pode usar o transform para ajustar */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 30px;
+  /* Ajuste o tamanho dos ícones */
+  font-weight: bold;
+  color: #002c3b;
+}
+
+@media (max-width: 500px) {
+  .carroso_slide {
+    height: 30vh;
+    /* Ajuste da altura para telas pequenas */
+    border-radius: 5vw;
+    /* Ajuste do raio de borda para telas menores */
+  }
+
+  .textCarroso {
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 2vw;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+    margin-left: 15%;
+  }
+
+  .textCarroso h2 {
+    font-size: 2.5vw;
+    font-weight: bolder;
+    width: 100%;
+  }
+
+  .textCarroso h4 {
+    font-size: 2vw;
+    font-weight: 600;
+    width: 100%;
+    letter-spacing: 0.15cap;
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 15px;
+    /* Ajuste o tamanho dos ícones */
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .sectionCarroso {
+    scale: 1.3;
+    height: 100;
+  }
+}
+
+.app-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero_container {
+  padding-top: 6rem;
+  background-image: url("/images/bgOficial.png");
+  background-size: 100% 100%;
+  min-height: 125vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  padding: 2rem;
+  translate: 0 -4rem;
+}
+
+.hero_text {
+  text-align: left;
+  translate: 0 -4rem;
+}
+
+.hero__title {
+  font-size: 5em;
+  margin: 0;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.hero__subtitle {
+  font-size: 2.5em;
+  margin-top: 10px;
+  line-height: 1;
+}
+
+.highlight {
+  color: #f6794a;
+  font-weight: bold;
+}
+
+.hero__globe {
+  max-width: 500px;
+  height: auto;
+}
+
+/* Estilos principais para dispositivos móveis */
+@media (max-width: 480px) {
+  .hero_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do container */
+  }
+
+  .textCarrosel h2 {
+    font-size: 0.8rem;
+  }
+
+  .textCarrosel h4 {
+    font-size: 0.4rem
+  }
+
+  .hero {
+    text-align: center;
+    translate: 0 0;
+    scale: 1.1;
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    gap: 20px; /* Define o espaçamento de 20px entre os elementos */
+  }
+
+  .hero_text {
+    text-align: center;
+  }
+
+  .hero__title {
+    margin: 0;
+  }
+
+  .hero__subtitle {
+    font-size: 4vw;
+    /* Escala o subtítulo para telas menores */
+    margin-top: 5px;
+    line-height: 1.2;
+    /* Ajusta o espaçamento entre linhas */
+    width: 200%;
+  }
+
+  .hero__globe {
+    width: 60vw;
+    /* Ajusta o tamanho da imagem */
+    max-width: 200px;
+    /* Limita o tamanho máximo da imagem */
+    height: auto;
+  }
+
+  .highlight {
+    color: #f6794a;
+    font-weight: bold;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero_container {
+    background-size: 100% 100%;
+    min-height: 60vh;
+    background-repeat: no-repeat;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 2rem;
+    padding: 20px;
+  }
+
+  .hero__globe {
+    width: 30vw;
+    min-width: 10rem;
+  }
+
+  .hero_text {
+    text-align: left;
+    translate: 0 0;
+  }
+
+  .hero__title {
+    font-size: 6vw;
+  }
+
+  .hero__subtitle {
+    font-size: 2.6vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro {
+    display: none;
+  }
+}
+
+.mission__image {
+  translate: 0 -0.3rem;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.label_imigrante {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.intro__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 2rem;
+  color: #002c3b;
+  font-weight: 600;
+  flex-direction: column;
+  /* Para alinhar itens verticalmente */
+  height: 200%;
+}
+
+@media (max-width: 768px) {
+  .intro__text {
+    font-size: 4.5vh;
+  }
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 480px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    /* Alinha os elementos verticalmente */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .intro__text {
+    font-size: 1.2rem;
+    /* Ajusta o tamanho do texto para telas pequenas */
+    line-height: 1.5;
+    /* Ajusta o espaçamento entre linhas */
+    padding: 0.4rem;
+  }
+}
+
+/* Mission Section */
+.mission {
+  z-index: 10;
+  position: relative;
+  /* Permite o posicionamento absoluto das imagens dentro desta seção */
+  display: flex;
+  /* Ajusta o conteúdo interno caso precise */
+  justify-content: center;
+  /* Centraliza as imagens horizontalmente */
+  align-items: center;
+  /* Centraliza as imagens verticalmente */
+  width: 100%;
+  /* Define o espaço da seção */
+}
+
+.mission__content {
+  flex: 2;
+  padding: 20px;
+}
+
+.mission__title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  color: #198168;
+  margin-bottom: 10px;
+}
+
+.mission__description {
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: 500;
+  color: #002c3b;
+}
+
+/* Features Section */
+.features {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+  padding: 40px 20px;
+}
+
+.card-container {
+  position: relative;
+  background-color: white;
+  border-radius: 32px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  height: 350px;
+}
+
+.card-title {
+  color: #198168;
+}
+
+.card-image {
+  height: 140px;
+  width: 140px;
+}
+
+.card-button {
+  position: relative;
+  border: none;
+  border-radius: 9px;
+  background-color: #f6794a;
+  height: 40px;
+  padding: 10px;
+  width: 60%;
+  margin: 2rem 0rem 0rem 0rem;
+  cursor: pointer;
+  bottom: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.card-text {
+  color: black;
+  width: 90%;
+}
+
+.features__grid {
+  margin-top: 2rem;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+  .mission__title {
+    font-size: 5vh;
+  }
+
+  .mission__description {
+    font-size: 4vh;
+  }
+
+  .card-container {
+    min-width: 40%;
+    padding: 0.5rem;
+    align-items: center;
+    height: 300px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.8rem;
+  }
+
+  .card-button {
+    font-size: 0.8rem;
+  }
+
+  .features__grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    min-width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .mission__title {
+    font-size: 4vh;
+  }
+
+  .mission__description {
+    font-size: 2.5vh;
+  }
+
+  .card-container {
+    padding: 0.5rem;
+    align-items: center;
+    height: 300px;
+    min-width: 85%;
+  }
+}
+
+/* AI Tool Section */
+.ai-tool {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #e6cfc9;
+}
+
+.crosel {
+  color: #2c3e50;
+  height: 60vh;
+  width: 50vw;
+}
+
+.carrosel_card {
+  border-radius: 20px;
+  background-image: url("/images/imgfundo.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.carrosel_card_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  gap: 2rem;
+  text-align: left;
+}
+
+.carrosel_img {
+  width: 20%;
+}
+
+.carrosel_botao {
+  width: 100%;
+  background-color: #e74c3c;
+  padding: 0.6rem;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .ai-tool {
+    display: flex;
+    flex-direction: column;
+    /* Elementos empilhados verticalmente */
+    align-items: center;
+  }
+
+  .carrosel_texto {
+    display: none;
+    /* Mantém o texto oculto para design limpo */
+  }
+
+  .carrosel_titulo {
+    font-size: 2rem;
+    /* Aumenta o tamanho do título para melhor visibilidade */
+    text-align: center;
+    margin-bottom: -2rem;
+  }
+
+  .carrosel_card_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .carrosel_img {
+    max-width: 20rem;
+    /* Reduz o tamanho máximo para telas menores */
+    width: 90%;
+    /* Usa a maior parte da largura disponível */
+  }
+
+  .carrosel_botao {
+    width: 90%;
+    /* Botão mais largo */
+    font-size: 1rem;
+    /* Texto maior no botão */
+    background-color: #f3b95a;
+    padding: 0.8rem;
+    /* Espaçamento maior para toques */
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+  .carrosel_botao:hover {
+    background-color: #e5a347;
+    /* Cor levemente diferente ao passar o mouse */
+  }
+
+  .carrosel_botao:focus {
+    outline: 2px solid #fff;
+    /* Destaque para acessibilidade */
+  }
+}
+
+@media (max-width: 768px) {
+  .ai-tool {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+
+  .boxAI {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    scale: 1.35;
+  }
+
+  .carrosel_card {
+    border-radius: 40px;
+    background-image: url("/images/imgfundo.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    /* Ajuste a altura aqui */
+  }
+
+  .carrosel_texto {
+    display: none;
+  }
+
+  .carrosel_titulo {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .carrosel_card_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+    gap: 0;
+    text-align: center;
+  }
+
+  .carrosel_img {
+    width: 40vw;
+  }
+
+  .carrosel_botao {
+    width: 90%;
+    font-size: 0.8rem;
+    background-color: #f3b95a;
+    padding: 0.3rem;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.ai-tool__content {
+  flex: 2;
+  padding: 20px;
+}
+
+.ai-tool__title {
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.ai-tool__description {
+  font-size: 1.2em;
+  color: #34495e;
+}
+
+.ai-tool__button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.ai-tool__image {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Donation Section */
+.donation_container {
+  width: 100%;
+  height: 100vh; /* Garante que o container ocupe toda a altura da tela */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/backInicial.svg");
+  background-size: cover; /* A imagem vai cobrir toda a área do container sem distorção */
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 480px){
+  .donation_container{
+    background-size: 100% 146%; /* Ajusta a imagem para ser contida na tela, sem cortar */
+    height: 100%; /* Deixa a altura do container ajustável */
+    width: 100%;
+  }
+}
+
+
+
+.donation {
+  margin-top: 20rem;
+  display: flex;
+  width: 70%;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 5vh;
+}
+
+.donation__content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.donation__title {
+  text-align: left;
+  font-size: 3em;
+  color: #f3b95a;
+  margin-bottom: 10px;
+}
+
+.donation__description {
+  text-align: left;
+  font-size: 1.7em;
+  color: #fff;
+}
+
+.carroselButton p {
+  font-size: 200%;
+}
+
+.carroselButton {
+  max-width: 40rem;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f3b95a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.donation__button {
+  text-align: center;
+  max-width: 9em;
+  font-size: 1.4rem;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 10px;
+  background-color: #f3b95a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.donation__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .donation__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Mantém todos os itens alinhados no topo */
+    align-items: flex-start;
+    /* Alinha o texto e botão à esquerda */
+    padding: 10px;
+    /* Espaçamento interno */
+  }
+
+  .donation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* Garante que o texto respeite a largura do container */
+  }
+
+  .donation__image {
+    flex: 0 0 40%;
+    height: auto;
+    width: 40%;
+  }
+
+  .donation__title {
+    text-align: left;
+    font-size: 2em;
+    color: #f3b95a;
+  }
+
+  .donation__description {
+    margin: 10px 0;
+    /* Espaçamento entre título e botão */
+    font-size: 1em;
+    color: #fff;
+    align-self: flex-start;
+    /* Alinha com o início do conteúdo */
+    padding: 0;
+    /* Remove o padding desnecessário */
+  }
+
+  .donation__button {
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color: #f3b95a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+
+  .carroselButton {
+    max-width: 6rem;
+    height: 6vw;
+    font-size: 2rem;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color: #f3b95a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    width: 40%;
+    font-weight: bold;
+  }
+}
+
+.carroso {
+  margin-top: 5rem;
+  width: 60vw;
+}
+
+
+
+@media (max-width: 768px) {
+  .carroso {
+    margin-top: 3rem;
+    width: 70vw;
+  }
+
+  .carroso_slide {
+    width: 100%;
+  }
+}
+

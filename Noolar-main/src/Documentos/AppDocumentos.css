@@ -1,0 +1,145 @@
+/* Estilos Gerais */
+.Docstexto {
+    font-size: 2.5vw; /* Ajuste do tamanho da fonte */
+    align-items: center;
+    padding: 3rem;
+    text-align: center;
+    /* Flexbox para centralizar */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 30vh; /* Ocupa toda a altura da tela */
+  }
+  
+  .Docsairplane {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: -5vw auto 0 auto; /* Centraliza horizontalmente */
+  }
+  
+  /* Definindo as cores de destaque */
+  .DocshighlightAqua {
+    color: #198168;
+  }
+  .textDocs
+  {
+    font-size: 2rem;
+  }
+  
+  .DocshighlightBlue {
+    
+    color: rgb(0, 97, 130);
+  }
+  
+  .DocshighlightOrange {
+    color: #f6794a;
+  }
+  
+  .Docshighlightyellow {
+    color: rgb(243, 185, 90);
+  }
+  .DocsfooterFinal {
+    z-index: -10;
+    display: flex;
+    margin-top: 10vh;  /* Ajuste a margem para algo mais previsível */
+    width: 100%;  /* Certifique-se de que a div tenha largura total */
+}
+
+  /* Ajustando o espaçamento da seção */
+  .Docssection {
+    margin-top: 60%;
+  }
+  
+  /* Imagens de fundo */
+  .DocsbgContent img {
+    width: 50%;
+    height: 50%;
+  }
+  
+  /* Estilo para a primeira seção de cards */
+  .DocscontentSectionFirst {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas por padrão */
+    gap: 5% 0; /* Espaçamento entre os cards */
+    padding: 20px;
+    justify-items: center; /* Centraliza os cards horizontalmente */
+    margin-bottom: 15vw;
+  }
+  
+  /* Responsividade para telas menores que 1200px */
+  @media (max-width: 1200px) {
+    .DocscontentSectionFirst {
+      grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+      margin-bottom: 15vw;
+      font-size: 1.5vw;
+
+    }
+    .DocscontentSectionFirst img{
+      width: 10vw;
+  
+    }
+  }
+  
+  /* Responsividade para telas menores que 800px */
+  @media (max-width: 800px) {
+    .DocscontentSectionFirst {
+      grid-template-columns: 1fr; /* 1 coluna */
+      gap: 3% 0; /* Ajuste de espaçamento */
+      margin-bottom: 40vw;
+      font-size: 2vw;
+  
+    }
+    .DocscontentSectionFirst img{
+      width: 20vw;
+  
+    }
+  }
+  
+    
+  /* Responsividade para telas menores que 800px */
+  @media (max-width: 500px) {
+    .DocscontentSectionFirst {
+      grid-template-columns: 1fr; /* 1 coluna */
+      gap: 3% 0; /* Ajuste de espaçamento */
+      margin-bottom: 40vw;
+      font-size: 4vw;
+  
+    }
+    .DocscontentSectionFirst img{
+      width: 20vw;
+  
+    }
+  }
+  
+  /* Layout responsivo para a seção dos cards */
+  .DocscontentSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 colunas por padrão */
+    gap: 5% 0; /* Espaçamento entre os cards */
+    padding: 10px;
+    justify-items: center; /* Centraliza os cards horizontalmente */
+  }
+  
+  /* Responsividade para telas menores que 1200px */
+  @media (max-width: 1200px) {
+    .DocscontentSection {
+      grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    }
+  }
+  
+  /* Responsividade para telas menores que 800px */
+  @media (max-width: 800px) {
+    .DocscontentSection {
+      grid-template-columns: 1fr; /* 1 coluna */
+    }
+    .Docsairplane {
+      display: flex;
+      width: 50vw;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: -5vw auto 0 auto; /* Centraliza horizontalmente */
+    }
+  }

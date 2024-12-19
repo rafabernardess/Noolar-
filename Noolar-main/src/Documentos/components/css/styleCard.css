@@ -1,0 +1,138 @@
+/* Estilos Gerais do Card */
+.Docscard-container {
+  perspective: 1000px;
+  width: 450px;  /* Tamanho padrão do card */
+  height: 380px; /* Tamanho padrão do card */
+  cursor: pointer;
+}
+
+.Docscard {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  display: flex; /* Use flexbox para controlar a posição dos elementos */
+  flex-direction: column; /* Imagem e texto empilhados verticalmente */
+}
+
+.Docscard-front,
+.Docscard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 10px; /* Adiciona border-radius nos cartões */
+  padding: 10px;
+}
+
+.Docscard-front {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.Docscard-back {
+  background-color: #4CAF50;
+  color: white;
+  transform: rotateY(180deg); /* Inicia o verso virado */
+  width: 100%;  /* Garantir o mesmo tamanho da frente */
+  height: 100%; /* Garantir o mesmo tamanho da frente */
+}
+
+.Docscard-container.Docsflipped .Docscard {
+  transform: rotateY(180deg); /* Rotaciona o card para virar */
+}
+
+.Docstext {
+  width: 90%;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 110%;
+  font-weight: 600;
+}
+
+.DocsimageFront {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+/* Media Query para telas menores que 1200px - Ajustando largura e altura */
+@media (max-width: 1200px) {
+  .Docscard-container {
+    padding: 1vw;
+    width: 80%; /* Ajusta a largura para 80% da tela */
+    max-width: 400px; /* Largura máxima para não esticar demais */
+    height: 300px; /* Card mais baixo */
+  }
+
+  .DocsimageFront {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  .Docstext {
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 100%;
+    font-weight: 600;
+  }
+
+  .Docscard-front {
+    flex-direction: column-reverse; /* Coloca a imagem acima do texto */
+  }
+  .Docscard-back {
+    width: 100%;  /* Garantir que o verso tenha o mesmo tamanho */
+    height: 100%; /* Garantir que o verso tenha o mesmo tamanho */
+  }
+}
+
+/* Media Query para telas menores que 800px - Ajustando ainda mais o card */
+@media (max-width: 800px) {
+  .Docscard-container {
+    perspective: 1000px;
+    width: 85%;  /* Ajusta a largura para 85% da tela */
+    max-width: 450px; /* Largura máxima */
+    height: 280px; /* Card mais baixo */
+    cursor: pointer;
+  }
+
+  .Docscard-front,
+  .Docscard-back {
+    width: 100%; /* Garantir que o tamanho seja o mesmo */
+    height: 100%; /* Garantir que o tamanho seja o mesmo */
+  }
+
+  .Docstext {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 120%;
+    font-weight: 600;
+  }
+
+  .DocsimageFront {
+    margin-top: auto;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100px;
+    max-height: 100px;
+  }
+}

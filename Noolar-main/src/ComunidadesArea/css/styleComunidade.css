@@ -1,0 +1,42 @@
+.contentComunidade {
+  width: 100vw; /* Ocupa a largura total da tela */
+  overflow-x: hidden;
+}
+
+.textInWhite
+{
+  color: #002C3B;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  margin-top: 5%;
+  margin-bottom: 20%;
+  font-size: 130%;
+}
+
+.paginaCOmunidadeObjetos {
+  margin-top: -22vw;
+}
+
+@media screen and (max-width: 1020px) {
+  .bgComunidade {
+    background-size: contain 100%; /* Ajusta proporcionalmente */
+  }
+
+  .paginaCOmunidadeObjetos {
+    margin-top: -15vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bgComunidade {
+    background-size: contain 100%; /* Reduzindo para telas menores */
+  }
+
+  .paginaCOmunidadeObjetos {
+    margin-top: -15vw;
+  }
+}

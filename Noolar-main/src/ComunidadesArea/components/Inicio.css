@@ -1,0 +1,97 @@
+.inicio{
+  background-image: url(/img/BackgroundInicio.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;  
+  height: 140vh;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+}
+
+.textoInicial{    
+  margin-top: 5em;
+  color: #FFFFFF;
+  font-size: 3em;
+}
+
+.destacado{
+  color: #F3B95A;
+  font-size: 3em;
+}
+
+.paragrafoInicial{
+  color: #FFFFFF;
+  font-size: 1.5em;
+}
+
+
+@media screen and (max-width: 1020px){
+  .inicio{
+      height: 128vh;    
+  }       
+}
+@media screen and (max-width: 960px){
+  .inicio{
+      height: 118vh;    
+  }    
+}
+
+@media screen and (max-width: 740px){
+  .inicio{
+      height: 90vh;    
+  }
+  .textoInicial{            
+      font-size: 2em;
+  }
+  
+  .destacado{
+      color: #F3B95A;
+      font-size: 2em;
+  }
+  
+  .paragrafoInicial{
+      color: #FFFFFF;
+      font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 620px){
+  .inicio{
+      height: 80vh;            
+  }
+
+  .textoInicial{            
+      font-size: 1.5em;
+  }
+  
+  .destacado{
+      color: #F3B95A;
+      font-size: 1.5em;
+  }
+
+  .paragrafoInicial{
+      color: #FFFFFF;
+      font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 530px){
+  .inicio{
+      height: 65vh;            
+  }
+
+  .textoInicial{            
+      font-size: 1.4em;
+  }
+  
+  .destacado{
+      color: #F3B95A;
+      font-size: 1.4em;
+  }
+
+  .paragrafoInicial{
+      color: #FFFFFF;
+      font-size: 0.8em;
+  }
+}

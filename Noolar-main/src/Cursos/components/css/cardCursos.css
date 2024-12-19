@@ -1,0 +1,126 @@
+.CursosBox {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  transition: height 0.5s ease; /* Suaviza a mudança de altura */
+}
+
+.CursosBox:hover {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+}
+.CursosBox:hover h4 {
+  display: none;
+}
+.CursosBox p {
+  opacity: 0; /* Começa invisível */
+  transform: scale(0.1); /* Começa menor */
+  transition: opacity 0.8s ease, transform 0.8s ease; /* Suaviza a entrada */
+}
+
+.CursosBox:hover p {
+  opacity: 1; /* Torna o texto visível */
+  transform: scale(1); /* Aumenta para o tamanho normal */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px; /* Tamanho final */
+}
+.CursosBox img {
+  background: #000;
+  display: flex;
+  position: relative;
+  margin-left: auto;
+  margin-top: 1vw;
+  margin-right: auto;
+  border-radius: 20px;
+  width: 90%;
+}
+
+.Cursoslegenda {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 2rem;
+}
+
+.Cursoslegenda {
+  display: flex;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.Cursoslegenda h4 {
+  font-size: 2rem;
+}
+.Cursoslegenda p {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .CursosBox img {
+    background: #000;
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-top: 1vw;
+    margin-right: auto;
+    border-radius: 20px;
+    width: 70%;
+  }
+  
+  .CursosBox {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 45%;
+    height: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+  }
+  .Cursoslegenda h4 {
+    font-size: 15px;
+  }
+
+  .CursosBox:hover {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+  }
+  .CursosBox:hover h4 {
+    display: none;
+  }
+  .CursosBox p {
+    opacity: 0; /* Começa invisível */
+    transform: scale(0.1); /* Começa menor */
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Suaviza a entrada */
+  }
+  
+  .CursosBox:hover p {
+    opacity: 1; /* Torna o texto visível */
+    transform: scale(1); /* Aumenta para o tamanho normal */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px; /* Tamanho final */
+  }
+}

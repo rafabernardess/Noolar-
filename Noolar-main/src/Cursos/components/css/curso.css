@@ -1,0 +1,215 @@
+/* Estilo geral para o contêiner principal */
+.livrosFooter {
+  margin-top: 320vh;
+}
+.cursosDiv {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+
+.buttonInscrever
+{
+  margin-top: 7vw;
+  display: flex;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.bgCursos
+{
+  background-image: url("https://noolar-cursos.vercel.app/img/Backgroundm.svg");
+  margin-top: 10vw;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 1px;
+
+
+}
+.cursosSectionDiv h2 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vw;
+  font-size: 4rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+#issoAI {
+  margin-top: 20vw;
+}
+.textsAreaCurso img {
+  display: flex;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -5vw;
+  scale: 1.2;
+  margin-bottom: 3vw;
+}
+
+/* Estilo para destaque de texto */
+.Cursoshighlight {
+  color: #f6794a; /* Cor de destaque (laranja) */
+}
+
+/* Área de cartões que contém as categorias e livros */
+.CursoscardsArea {
+  display: flex; /* Utiliza Flexbox */
+  padding-bottom: 30vh; /* Ajuste o valor conforme necessário */
+
+  flex-direction: column; /* Organização em coluna */
+  columns: 4;
+  position: relative; /* Controle de layout */
+  top: 55vw; /* Distância do topo */
+  left: 0;
+  width: 100%; /* Largura total do contêiner */
+  text-align: left; /* Texto alinhado à esquerda */
+}
+
+/* Estilos para a seção dos livros */
+.Cursoslivros {
+  display: flex; /* Flexbox para alinhar os livros em linha */
+  flex-direction: row; /* Alinhamento horizontal */
+  flex-wrap: nowrap; /* Não permite quebra de linha */
+  margin: 0 6vw; /* Margem horizontal */
+  overflow-x: auto; /* Rolagem horizontal */
+  scroll-behavior: smooth; /* Rolagem suave */
+  -webkit-overflow-scrolling: touch; /* Suavidade no mobile */
+  white-space: nowrap; /* Linha contínua */
+  padding-bottom: 2vw; /* Espaçamento inferior */
+  cursor: grab; /* Cursor de arraste */
+}
+
+.Cursoslivros::-webkit-scrollbar {
+  display: none; /* Esconde a barra de rolagem */
+}
+
+/* Cada livro dentro do carrossel */
+.Livro {
+  flex: 0 0 auto; /* Impede que o livro ocupe mais espaço que o necessário */
+  margin-right: 2vw; /* Margem entre os livros */
+}
+
+/* Estilos para os cartões */
+.Cursoscard {
+  position: relative;
+  transform: translateY(-2vw); /* Ajuste vertical */
+}
+
+.redesSociais {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  gap: 10vw;
+ 
+}
+
+.redesSociais h4 {
+  display: flex;
+  position: relative;
+  font-size: 2.5rem;
+  margin-left: 5vw;
+}
+.redesSociais img {
+  display: flex;
+  position: relative;
+  width: 50%;
+  margin-right: 5vw;
+}
+
+.buttonsRedes
+{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  gap: 3vw;
+  margin-left: 5vw;
+  margin-top: -10vw;
+  margin-bottom: 10vw;
+}
+
+@media (max-width: 1200px) {
+  .cursosDiv {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    scale: 1.2;
+    gap: 6vw;
+  }
+
+  .cursosSectionDiv h2 {
+    color: white;
+    top: 20vw;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60vw;
+    font-size: 2rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  #issoAI {
+    margin-top: 50vw;
+  }
+
+  .textsAreaCurso img {
+    display: flex;
+    position: relative;
+    left: -10vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5vw;
+    scale: 0.8;
+    margin-bottom: 3vw;
+  }
+
+  .redesSociais {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  .redesSociais h4 {
+    margin: 0;
+    display: flex;
+    text-align: center;
+    position: relative;
+    font-size: 100%;
+  }
+  .redesSociais img {
+    display: flex;
+    position: relative;
+  }
+  
+  .buttonsRedes
+  {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    gap: 3vw;
+  }
+
+  .bgCursos
+  {
+    background-image: url("https://noolar-cursos.vercel.app/img/Backgroundm.svg");
+    margin-top: 10vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  
+  }
+}

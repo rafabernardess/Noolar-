@@ -1,0 +1,44 @@
+/* Estilos para o texto exibido no card */
+.CursostextoDoCard {
+  font-weight: 600;
+    color: #006182; /* Cor do texto */
+    width: 48vw; /* Largura da caixa de texto */
+    font-size: 1.6vw; /* Tamanho da fonte baseado na largura da viewport */
+    padding: 2vw; /* Espaçamento interno da caixa de texto */
+    border-radius: 0 5vh 5vh 0; /* Arredondamento dos cantos */
+    background-color: #d9d9d9; /* Cor de fundo do card */
+    box-shadow: 0.2vw 1vw 1vw rgba(0, 0, 0, 0.537); /* Sombra para elevação */
+  }
+  
+  /* Estilos para o título da categoria */
+  .CursosCategoria {
+    color: #198168; /* Cor do texto */
+    font-weight: 700; /* Negrito */
+    display: flex; /* Flexbox para alinhar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    font-size: 3vw; /* Tamanho da fonte relativo à viewport */
+    margin: 7vw; /* Margem superior e inferior */
+  }
+  
+  /* Estilos para a caixa de livros */
+  .Cursosbox-livros {
+    display: flex; /* Flexbox para organizar os elementos */
+    flex-direction: column; /* Empilha verticalmente */
+    position: relative; /* Posição relativa */
+    text-align: left; /* Alinhamento do texto à esquerda */
+    margin-top: 10vw; /* Espaçamento superior */
+
+  }
+  
+  /* Responsividade para dispositivos com largura menor que 800px */
+  @media (max-width: 800px) {
+    .CursostextoDoCard {
+      width: 70vw; /* Largura maior para dispositivos menores */
+      font-size: 3vw; /* Fonte proporcional à viewport */
+    }
+  
+    .CursosCategoria {
+      font-size: 5vw; /* Ajusta o tamanho do texto */
+    }
+  }
+  

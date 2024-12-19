@@ -1,0 +1,152 @@
+
+
+/* Estilo para cada item de livro no carrossel */
+.Leituralivro {
+
+  position: relative;
+  margin-right: 6vw; /* Espaçamento à direita entre os livros */
+  text-align: center; /* Centraliza o texto do livro */
+  user-select: none;
+}
+
+/* Estilo para o título (h4) de cada livro */
+.Leituralivro h4 {
+
+  opacity: 0; /* Título invisível inicialmente */
+  color: #f6784a00; /* Cor invisível, provavelmente um valor não intencional */
+  font-size: 1.3vw; /* Tamanho do título */
+  display: flex;
+  justify-content: center;
+  white-space: normal; /* Permite que o texto quebre em várias linhas */
+  padding-bottom: 0.5vw;
+  font-weight: medium; 
+   color: #006182; /* Cor de destaque laranja */
+  margin-bottom: 0.5vw; /* Margem inferior do título */
+  margin-top: 0vw; /* Sem margem superior */
+  transition: opacity 0.3s ease, font-size 0.3s ease; /* Transição suave de opacidade e tamanho */
+}
+
+/* Estilo para o parágrafo de cada livro */
+.Leituralivro p {
+
+  opacity: 0; /* Parágrafo invisível inicialmente */
+  color: #006182; /* Cor laranja */
+  font-size: 1.2vw; /* Tamanho do parágrafo */
+  margin-top: 0; /* Sem margem superior */
+  transition: opacity 0.3s ease, font-size 0.3s ease; /* Transição suave de opacidade e tamanho */
+}
+
+/* Estilo ao passar o mouse sobre o título do livro */
+.Leituralivro:hover h4 {
+  opacity: 1; /* Título visível */
+  font-size: 1.3vw; /* Tamanho do título */
+  color: #006182; /* Cor laranja */
+  margin-bottom: 0.5vw; /* Margem inferior */
+  margin-top: 0vw; /* Sem margem superior */
+}
+
+/* Estilo ao passar o mouse sobre o parágrafo do livro */
+.Leituralivro:hover p {
+  opacity: 1; /* Parágrafo visível */
+  color: #006182; /* Cor laranja */
+  font-size: 1.2vw; /* Tamanho do parágrafo */
+  margin-top: 0; /* Sem margem superior */
+}
+
+/* Estilo para a imagem de cada livro */
+.LeituraimagemLivro {
+  width: 13vw; /* Largura da imagem */
+  height: 20vw; /* Largura da imagem */
+
+  border-radius: 1vw; /* Bordas arredondadas */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Transição suave para escala e brilho */
+}
+
+/* Efeito de hover na imagem do livro */
+.Leituralivro:hover .LeituraimagemLivro {
+  transform: scale(1.05); /* Aumenta levemente a imagem */
+  filter: brightness(0.7); /* Escurece a imagem para efeito de destaque */
+}
+
+
+@media (max-width: 800px)
+{
+ /* Estilo para cada item de livro no carrossel */
+.Leituralivro {
+  position: relative;
+  text-align: center; /* Centraliza o texto do livro */
+}
+
+/* Estilo para o título (h4) de cada livro */
+.Leituralivro h4 {
+  
+  opacity: 0; /* Título invisível inicialmente */
+  color: #f6784a00; /* Cor invisível, provavelmente um valor não intencional */
+  display: flex;
+  justify-content: center;
+  white-space: normal; /* Permite que o texto quebre em várias linhas */
+  padding-bottom: 1vw;
+  font-weight: medium; 
+  font-size: 1.8vw; /* Tamanho do título */
+  color: #006182; /* Cor de destaque laranja */
+  margin-bottom: -0.5vw; /* Margem inferior do título */
+  margin-top: 0vw; /* Sem margem superior */
+  transition: opacity 0.3s ease, font-size 0.3s ease; /* Transição suave de opacidade e tamanho */
+}
+.Leituralegenda
+{
+  font-size: 2.8vw;
+}
+
+/* Estilo para o parágrafo de cada livro */
+.Leituralivro p {
+  opacity: 0; /* Parágrafo invisível inicialmente */
+  color: #006182; /* Cor laranja */
+  font-size: 2.5vw; /* Tamanho do parágrafo */
+  margin-top: 0; /* Sem margem superior */
+  transition: opacity 0.3s ease, font-size 0.3s ease; /* Transição suave de opacidade e tamanho */
+}
+
+.Leituralegenda
+{
+  color: #006182;
+  text-align: center;
+}
+
+/* Estilo ao passar o mouse sobre o título do livro */
+.Leituralivro:hover h4 {
+  opacity: 1; /* Título visível */
+  font-size: 3vw; /* Tamanho do título */
+  color: #006182; /* Cor laranja */
+  margin-bottom: -0.5vw; /* Margem inferior */
+  text-align: center;
+  align-items: center;
+}
+
+/* Estilo ao passar o mouse sobre o parágrafo do livro */
+.Leituralivro:hover p {
+  opacity: 1; /* Parágrafo visível */
+  color: #006182; /* Cor laranja */
+  font-size: 2.5vw; /* Tamanho do parágrafo */
+  margin-top: 0; /* Sem margem superior */
+  text-align: center;
+  align-items: center;
+}
+
+/* Estilo para a imagem de cada livro */
+.LeituraimagemLivro {
+  width: 28vw; /* Largura da imagem */
+  height: 37vw; /* Largura da imagem */
+
+  border-radius: 1vw; /* Bordas arredondadas */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Transição suave para escala e brilho */
+}
+
+/* Efeito de hover na imagem do livro */
+.Leituralivro:hover .LeituraimagemLivro {
+  transform: scale(1.05); /* Aumenta levemente a imagem */
+  filter: brightness(0.7); /* Escurece a imagem para efeito de destaque */
+}
+
+
+}

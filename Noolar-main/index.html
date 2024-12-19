@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./images/logo.png" />
+    <link rel="stylesheet" href="./src/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Noolar</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <div class="gtranslate_wrapper"></div>
+    <script>
+      window.gtranslateSettings = {
+        default_language: "pt",
+        native_language_names: true,
+        detect_browser_language: true,
+        languages: ["pt", "es", "en", "ca", "de", "it", "fr", "ru", "de"],
+        globe_color: "#F6794A",
+        wrapper_selector: ".gtranslate_wrapper",
+        horizontal_position: "right",
+        vertical_position: "bottom",
+        alt_flags: { pt: "brazil" },
+      };
+    </script>
+    <script
+      src="https://cdn.gtranslate.net/widgets/latest/globe.js"
+      defer
+    ></script>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+   <script>
+    (function(d){
+      var s = d.createElement("script");
+      /* uncomment the following line to override default position*/
+       s.setAttribute("data-position", 5);
+      /* uncomment the following line to override default size (values: small, large)*/
+      /* s.setAttribute("data-size", "small");*/
+      /* uncomment the following line to override default language (e.g., fr, de, es, he, nl, etc.)*/
+      /* s.setAttribute("data-language", "language");*/
+      /* uncomment the following line to override color set via widget (e.g., #053f67)*/
+      // s.setAttribute("data-color", "#f6794a");
+      /* uncomment the following line to override type set via widget (1=person, 2=chair, 3=eye, 4=text)*/
+      /* s.setAttribute("data-type", "1");
+      /* s.setAttribute("data-statement_text:", "Our Accessibility Statement");*/
+      /* s.setAttribute("data-statement_url", "http://www.example.com/accessibility")";*/
+      /* uncomment the following line to override support on mobile devices*/
+      /* s.setAttribute("data-mobile", true);*/
+      /* uncomment the following line to set custom trigger action for accessibility menu*/
+       s.setAttribute("data-trigger", "triggerId")
+      s.setAttribute("data-account", "FTLIBwdhM1");
+      s.setAttribute("src", "https://cdn.userway.org/widget.js");
+      (d.body || d.head).appendChild(s);
+    })(document)
+    </script>
+    <noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a></noscript>
+  
+
+  </body>
+</html>

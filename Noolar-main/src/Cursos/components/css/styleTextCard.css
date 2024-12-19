@@ -1,0 +1,62 @@
+/* Estilos para o texto exibido no card */
+.CursostextoDoCard {
+  margin-bottom: 5vw;
+  color: #006182; /* Cor do texto */
+  width: 40vw; /* Largura da caixa de texto */
+  font-size: 1.4vw; /* Tamanho da fonte baseado na largura da viewport */
+  padding: 2vw; /* Espaçamento interno da caixa de texto */
+  border-radius: 0 10vh 10vh 0; /* Arredondamento dos cantos */
+  background-color: #d9d9d9; /* Cor de fundo do card */
+  box-shadow: 0.2vw 1vw 1vw rgba(0, 0, 0, 0.537); /* Sombra para elevação */
+}
+
+/* Estilos para a caixa de livros */
+.Cursosbox-livros {
+  display: flex; /* Flexbox para organizar os elementos */
+  flex-direction: column; /* Empilha verticalmente */
+  position: relative; /* Posição relativa */
+  left: 0vw;
+  text-align: left; /* Alinhamento do texto à esquerda */
+  margin-top: 10vw; /* Espaçamento superior */
+}
+
+/* Responsividade para dispositivos com largura menor que 800px */
+@media (max-width: 800px) {
+  .CursostextoDoCard {
+    width: 70vw; /* Largura maior para dispositivos menores */
+    font-size: 3vw; /* Fonte proporcional à viewport */
+  }
+}
+
+/* Estilos para o texto exibido no card */
+.CursostextoDoCardDireita {
+  margin-left: auto; /* Empurra o card para a direita */
+  color: #006182; /* Cor do texto */
+  width: 40vw; /* Largura da caixa de texto */
+  font-size: 1.4vw; /* Tamanho da fonte baseado na largura da viewport */
+  padding: 2vw; /* Espaçamento interno da caixa de texto */
+  border-radius: 10vh 0 0 10vh; /* Arredondamento dos cantos ajustado para o lado direito */
+  background-color: #d9d9d9; /* Cor de fundo do card */
+  box-shadow: -0.2vw 1vw 1vw rgba(0, 0, 0, 0.537); /* Sombra ajustada para a direção correta */
+  margin-bottom: 10vw;
+
+}
+
+/* Estilos para a caixa de livros */
+.Cursosbox-livrosDireita {
+  display: flex; /* Flexbox para organizar os elementos */
+  flex-direction: column; /* Empilha verticalmente */
+  position: relative; /* Posição relativa */
+  left: 0vw;
+
+  text-align: right; /* Alinhamento do texto à direita */
+  margin-top: 0vw; /* Espaçamento superior */
+}
+
+/* Responsividade para dispositivos com largura menor que 800px */
+@media (max-width: 800px) {
+  .CursostextoDoCardDireita {
+    width: 70vw; /* Largura maior para dispositivos menores */
+    font-size: 3vw; /* Fonte proporcional à viewport */
+  }
+}

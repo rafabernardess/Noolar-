@@ -1,0 +1,83 @@
+/* Estilos do cardStatic */
+.DocscardStatic {
+  width: 30vw; /* Largura do card */
+  height: 100%; /* Aumenta a altura do card */
+  padding: 2vw; /* Espaçamento interno do card */
+  border-radius: 15px; /* Arredondamento dos cantos */
+  background: linear-gradient(160deg, rgba(25, 129, 104, 1) 0%, rgba(0, 97, 130, 1) 100%);
+  box-shadow: 0 2vw 5vw rgba(0, 0, 0, 0.2); /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para o hover */
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+/* Imagem centralizada e grande */
+.DocscardStatic-image {
+  width: 50%; /* Imagem ocupa 80% do card */
+  height: auto; /* Mantém a proporção da imagem */
+  object-fit: cover; /* A imagem vai cobrir o espaço disponível */
+  border-radius: 10px; /* Arredondamento da imagem */
+  margin-bottom: 1vw; /* Espaço entre a imagem e o título */
+}
+
+/* Estilo do título */
+.DocscardStatic-title {
+  font-size: 130%; /* Tamanho do título */
+  color: white; /* Cor do título */
+  margin: 0; /* Remove o espaço extra */
+}
+
+/* Efeito hover */
+.DocscardStatic:hover {
+  transform: scale(1.05); /* Aumenta o tamanho do card */
+  box-shadow: 0 4vw 10vw rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+}
+
+/* Responsividade para telas menores que 1200px */
+@media (max-width: 1200px) {
+  .DocscardStatic {
+    width: 75%; /* Aumenta a largura do card para 60% */
+    height: 100%; /* Aumenta a altura do card */
+  }
+
+  .DocscardStatic-image {
+    width: 40%; /* Ajusta a largura da imagem */
+  }
+
+  .DocscardStatic-title {
+    font-size: 100%; /* Diminui um pouco o tamanho do título */
+  }
+}
+
+/* Responsividade para telas menores que 800px */
+@media (max-width: 800px) {
+  .DocscardStatic {
+    width: 80%; /* A largura do card aumenta para 80% */
+    height: 100%; /* Aumenta a altura do card */
+    padding: 4vw; /* Aumenta o espaçamento interno */
+  }
+
+  .DocscardStatic-image {
+    width: 45%; /* A imagem ocupa 70% do card */
+  }
+
+  .DocscardStatic-title {
+    font-size: 200%; /* Diminui ainda mais o tamanho do título */
+  }
+}
+
+/* Responsividade para telas menores que 500px */
+@media (max-width: 500px) {
+  .DocscardStatic {
+    width: 90%; /* A largura do card ocupa 90% */
+    height: 100%; /* Aumenta a altura do card */
+    padding: 5vw; /* Aumenta o padding interno */
+  }
+
+  .DocscardStatic-image {
+    width: 50%; /* A imagem ocupa 80% do card */
+  }
+
+  .DocscardStatic-title {
+    font-size: 100%; /* Ajusta o tamanho do título para 100% */
+  }
+}

@@ -1,0 +1,110 @@
+.headerSobreNos {
+  background-color: aquamarine;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+/* Estilo do título */
+#tituloSobreNos {
+  width: 100vw;
+  margin-top: 20vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  
+  position: relative;
+}
+
+/* Estilo da seção de desenvolvedores */
+.devsSection {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.devsSection > div {
+  flex: 1 1 calc(50% - 1rem);
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo do plano de fundo */
+.bgSobreNos {
+  margin-top: -100rem;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20rem;
+  width: 100%;
+  scale: 3.5 3.5;
+  overflow: hidden;
+}
+
+.bgSobreNos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Estilo do conteúdo "Sobre Nós" */
+.ConteudoSobreNos {
+  color: black;
+  overflow-y: hidden;
+  margin-top: 50vh;
+  margin-bottom: 10vh;
+  height: 100%;
+}
+
+/* Estilo dos ícones */
+.iconsSobreNos {
+
+  margin-top: 4vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+@media (max-width: 1800px) {
+  .bgSobreNos {
+    margin-top: -70rem;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20rem;
+    width: 100%;
+    scale: 3.5 3.5;
+    overflow: hidden;
+  }
+}
+@media (max-width: 1000px) {
+  #tituloSobreNos {
+    margin-top: 10vh;
+    position: relative;
+  }
+  /* Estilo do plano de fundo */
+  .bgSobreNos {
+    margin-top: -40rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .devsSection {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .devsSection > div {
+    flex: 1 1 calc(100% - 1rem);
+  }
+  .bgSobreNos {
+    margin-top: -6rem;
+
+  }
+}

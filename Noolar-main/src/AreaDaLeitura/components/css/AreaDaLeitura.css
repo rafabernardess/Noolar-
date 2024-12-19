@@ -1,0 +1,53 @@
+/* Estilo geral para o contêiner principal */
+.livrosFooter {
+  margin-top: 320vh;
+}
+
+/* Estilo para destaque de texto */
+.Leiturahighlight {
+  color: #f6794a; /* Cor de destaque (laranja) */
+}
+
+/* Área de cartões que contém as categorias e livros */
+.LeituracardsArea {
+  display: flex; /* Utiliza Flexbox */
+  padding-bottom: 30vh; /* Ajuste o valor conforme necessário */
+
+  flex-direction: column; /* Organização em coluna */
+  columns: 4;
+  position: relative; /* Controle de layout */
+  top: 55vw; /* Distância do topo */
+  left: 0;
+  width: 100%; /* Largura total do contêiner */
+  text-align: left; /* Texto alinhado à esquerda */
+}
+
+/* Estilos para a seção dos livros */
+.Leituralivros {
+  display: flex; /* Flexbox para alinhar os livros em linha */
+  flex-direction: row; /* Alinhamento horizontal */
+  flex-wrap: nowrap; /* Não permite quebra de linha */
+  margin: 0 6vw; /* Margem horizontal */
+  overflow-x: auto; /* Rolagem horizontal */
+  scroll-behavior: smooth; /* Rolagem suave */
+  -webkit-overflow-scrolling: touch; /* Suavidade no mobile */
+  white-space: nowrap; /* Linha contínua */
+  padding-bottom: 2vw; /* Espaçamento inferior */
+  cursor: grab; /* Cursor de arraste */
+}
+
+.Leituralivros::-webkit-scrollbar {
+  display: none; /* Esconde a barra de rolagem */
+}
+
+/* Cada livro dentro do carrossel */
+.Livro {
+  flex: 0 0 auto; /* Impede que o livro ocupe mais espaço que o necessário */
+  margin-right: 2vw; /* Margem entre os livros */
+}
+
+/* Estilos para os cartões */
+.Leituracard {
+  position: relative;
+  transform: translateY(-2vw); /* Ajuste vertical */
+}

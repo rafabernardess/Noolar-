@@ -1,0 +1,67 @@
+.Docsfooter {
+  .DocsBg {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
+  }
+  .Docstexto-cuidado {
+    margin-top: 20vw;
+
+    width: 80%;
+    font-size: 3vw;
+  }
+  .Docsrodap-item {
+    margin-top: 10vw;
+    background-image: url("/fundo2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw; /* Ajusta a largura da div para a largura total da tela */
+
+    .Docserro {
+      margin-top: 15vw;
+
+      width: 10rem;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .Docsfooter {
+        height: 60vh;
+      }
+      .DocsBg {
+        position: absolute;
+        left: 0;
+        width: 100vw;
+        height: 60vh;
+        z-index: -1; /* Coloca a imagem atrás do conteúdo */
+      }
+      .Docserro {
+        margin-bottom: 20vw;
+        margin-top: 30vw;
+        width: 7rem;
+      }
+    }
+
+    .Docstexto-cuidado {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    @media (max-width: 768px) {
+      .Docsfooter {
+        height: 60vh;
+      }
+      .Docstexto-cuidado {
+        margin-top: 10vw;
+
+        width: 80%;
+        font-size: 3vw;
+      }
+    }
+  }
+}

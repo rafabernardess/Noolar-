@@ -1,0 +1,322 @@
+.card {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.comunidadeTexto
+{
+display: flex;
+position: relative;
+margin-right: auto;
+}
+
+.textoCards {
+    margin-top: 1.3em;
+    color: #FFFFFF;
+    font-size: 2em;
+}
+
+.destacadoCards {
+    color: #F3B95A;
+    font-size: 2em;
+}
+
+.imagensConfiguracao {
+    border-radius: 50px;
+    width: 390px;
+    cursor: pointer;
+    margin: 50px;
+    background-size: 100%;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.imagensConfiguracao:hover {
+    transform: scale(1.1, 1.1);
+    transition: 0.5s;
+}
+
+.contato {
+    background-image: url("/backComunidade.png");
+    display: flex;
+    padding: 80px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.imagemGlobo {
+    width: 500px;
+    background-size: 50%;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.textoContato {
+    font-size: 33px;
+}
+
+.paragrafoContato {
+    font-size: 20px;
+}
+
+.destacadoParagrafo {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1020px) {
+    .textoCards {
+        font-size: 1.3em;
+    }
+
+    .destacadoCards {
+        font-size: 1.5em;
+    }
+
+    .imagensConfiguracao {
+        width: 380px;
+        margin: 40px;
+    }
+
+    .textoContato {
+        font-size: 25px;
+    }
+
+    .imagemGlobo {
+        width: 400px;
+        background-size: 50%;
+    }
+
+    .paragrafoContato {
+        font-size: 16px;
+    }
+
+    .destacadoParagrafo {
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .textoCards {
+        margin-top: 4em;
+        font-size: 1.1;
+    }
+
+    .imagensConfiguracao {
+        width: 280px;
+        margin: 30px;
+    }
+
+
+    .textoContato {
+        font-size: 20px;
+    }
+
+    .paragrafoContato {
+        font-size: 15px;
+    }
+
+    .destacadoParagrafo {
+        font-size: 15px;
+    }
+
+    .imagemGlobo {
+        width: 350px;
+
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .textoCards {
+        font-size: 1.1em;
+    }
+
+    .destacadoParagrafo {
+        font-size: 1.1em;
+    }
+
+    .imagensConfiguracao {
+        width: 250px;
+        margin: 20px;
+        border-radius: 20px;
+    }
+
+    .textoContato {
+        font-size: 15px;
+    }
+
+    .paragrafoContato {
+        font-size: 12px;
+    }
+
+    .destacadoParagrafo {
+        font-size: 12px;
+    }
+
+    .imagemGlobo {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .textoCards {
+        font-size: .9em;
+    }
+
+    .destacadoCards {
+        font-size: .9em;
+    }
+
+    .imagensConfiguracao {
+        width: 200px;
+        margin: 20px;
+    }
+
+    .imagemGlobo {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 531px) {
+
+    .textoEmBranco {
+        font-size: 4vh;
+    }
+
+    .card {
+        background-repeat: repeat;
+    }
+
+    .textoCards {
+        font-size: .8em;
+    }
+
+    .destacadoCards {
+        font-size: .8em;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagensConfiguracao {
+        width: 300px;
+        border-radius: 30px;
+    }
+
+    .contato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagemGlobo {
+        width: 320px;
+        margin-bottom: 1em;
+    }
+
+    .textoContato {
+        font-size: 20px;
+    }
+
+    .paragrafoContato {
+        font-size: 16px;
+    }
+
+    .destacadoParagrafo {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .botaoDePesquisa {
+        width: 90%;
+    }
+
+    .inicio {
+        text-align: center;
+    }
+
+    .textoEmBranco {
+        font-size: 3vh;
+        /* Fonte adaptada ao tamanho da tela */
+        text-align: center;
+        /* Centraliza para melhor visualização */
+    }
+
+    .card {
+        background-repeat: repeat;
+        padding: 8px;
+        /* Adiciona espaçamento interno */
+        margin: 5px 0;
+        /* Espaçamento entre os elementos */
+    }
+
+    .textoCards {
+        font-size: 0.7em;
+        text-align: center;
+    }
+
+    .destacadoCards {
+        font-size: 0.7em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        /* Espaçamento entre os itens */
+    }
+
+    .imagensConfiguracao {
+        width: 100%;
+        /* Usa toda a largura disponível */
+        max-width: 280px;
+        /* Limita o tamanho máximo */
+        border-radius: 20px;
+        /* Bordas arredondadas */
+    }
+
+    .contato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        /* Espaçamento entre os itens */
+    }
+
+    .imagemGlobo {
+        width: 100%;
+        max-width: 280px;
+        margin-bottom: 1em;
+    }
+
+    .textoContato {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .paragrafoContato {
+        font-size: 14px;
+        text-align: justify;
+        /* Melhor legibilidade */
+        padding: 0 10px;
+        /* Evita tocar nas bordas da tela */
+    }
+
+    .destacadoParagrafo {
+        font-size: 14px;
+        font-weight: bold;
+        text-align: justify;
+    }
+
+}

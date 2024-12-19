@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 100vh; /* Garante que a altura do corpo ocupe a tela */
+overflow-x: hidden;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerFinal {
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo do footer */
+  align-items: center;
+  background-color: #f0f0f0; /* Cor de fundo do footer */
+  height: 5vw; /* Ajuste para uma altura visível */
+  margin-top: auto; /* Empurra o footer para o final */
+}
+
+/* Outros estilos mantidos */
+.texto {
+  font-size: 2.5vw;
+  align-items: center;
+  padding: 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.airplane {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: -5vw auto 0 auto;
+}
+
+.highlightAqua {
+  color: #198168;
+}
+
+.highlightBlue {
+  color: rgb(0, 97, 130);
+}
+
+.highlightOrange {
+  color: #f6794a;
+}
+
+.highlightyellow {
+  color: rgb(243, 185, 90);
+}
+
+/* Ajustando o espaçamento da seção */
+.section {
+  margin-top: 60%;
+}
+
+.bgContent img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Estilo para a primeira seção de cards */
+.contentSectionFirst {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5% 0;
+  padding: 20px;
+  justify-items: center;
+  margin-bottom: 15vw;
+}
+
+@media (max-width: 1200px) {
+  .contentSectionFirst {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 15vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .contentSectionFirst {
+    grid-template-columns: 1fr;
+    gap: 3% 0;
+    margin-bottom: 30vw;
+  }
+}
+
+.contentSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5% 0;
+  padding: 20px;
+  justify-items: center;
+}
+
+@media (max-width: 1200px) {
+  .contentSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .contentSection {
+    grid-template-columns: 1fr;
+  }
+  .airplane {
+    display: flex;
+    width: 50vw;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: -5vw auto 0 auto;
+  }
+}

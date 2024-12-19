@@ -1,0 +1,101 @@
+.developers {
+  display: flex; /* Torna a div um container flex */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo */
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  width: 100vw; /* Largura total da viewport */
+  overflow: hidden; /* Remove barras de rolagem */
+  margin: 0; /* Remove margens externas */
+  padding: 0; /* Remove paddings internos */
+  box-sizing: border-box; /* Garante que padding/margins não extrapolem o tamanho */
+}
+
+
+.iconsDev {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+}
+
+.cargoDev {
+
+  overflow: hidden;
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.iconDev {
+margin-left: auto;
+margin-right: auto;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.contentTextDev {
+  width: 50%;
+  margin-left: -10vw;
+  overflow: hidden;
+}
+
+.subtitleDevs {
+
+  overflow: hidden;
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.iconGitHub {
+
+  color: white;
+  background-color: #000000;
+  scale: 0.8;
+  padding: 0.4rem 0.3rem 0rem 0.4rem;
+  border-radius: 10rem;
+  transition: background-color 0.3s;
+}
+
+.iconGitHub:hover {
+  background-color: #333333;
+}
+
+.iconLinkedin {
+  color: white;
+  background-color: #346e93;
+  scale: 0.8;
+  padding: 0.3rem 0.2rem 0rem 0.3rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.iconLinkedin:hover {
+  background-color: #285f76;
+}
+
+.devsSection {
+  margin-top: 10vh;
+  overflow: hidden;
+}
+
+@media (max-width: 1368px) {
+  .developers {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .subtitleDevs {
+    text-align: left;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,107 @@
+.pesquisa{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textoPesquisa{
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 1em;
+}
+
+input{
+    border-radius: 50px;
+    padding: 1em;
+    border: none;
+    width: 50em;
+    margin-bottom: 1em;
+}
+
+input:focus{
+    outline: none;
+}
+.paragrafoPesquisa{
+    color: #fff;
+    font-size: 1.4em;
+}
+
+@media screen and (max-width: 1020px){
+    .pesquisa{
+        height: 79vh;   
+        color: #002C3B;
+        margin-bottom: 10%;   
+
+    }
+    .textoPesquisa{
+        margin-top: 1em;
+    }    
+}
+
+@media screen and (max-width: 960px){
+    .pesquisa{
+        height: 65vh;  
+        margin-bottom: 10%;   
+     
+    }
+    .textoPesquisa{
+        margin-top: 1em;
+    }  
+}
+
+@media screen and (max-width: 740px){
+    .pesquisa{
+        height: 50vh;              
+    }
+
+    .textoPesquisa{
+        font-size: 1.1em;    
+    }
+
+    input{        
+        padding: 0.7em;                
+        width: 40em;        
+    }
+
+    .paragrafoPesquisa{     
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 620px){
+    .pesquisa{
+        height: 45vh;         
+    }
+
+    .textoPesquisa{
+        font-size: 1.2em;    
+    }
+
+    input{        
+        padding: 0.7em;        
+        width: 30em;        
+    }
+
+    .paragrafoPesquisa{     
+        font-size: .8em;
+    }
+}
+@media screen and (max-width: 530px){
+    .pesquisa{
+        height: 38vh; 
+    }
+
+    .textoPesquisa{
+        font-size: 1em;    
+    }
+
+    input{        
+        padding: 0.6em;        
+        width: 25em;        
+    }
+
+    .paragrafoPesquisa{     
+        font-size: .7em;
+    }
+}

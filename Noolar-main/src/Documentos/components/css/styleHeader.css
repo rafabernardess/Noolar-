@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Docsbox-title {
+  scale: 1.2;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  left: 10vw;
+
+  align-items: center; /* Centraliza verticalmente */
+  margin: 15% 15%;
+  text-align: left;
+}
+
+.DocsImg {
+  margin-right: 1%; /* Espaço entre a imagem e o texto */
+  width: 30%; /* Ajuste o tamanho se necessário */
+  height: auto; /* Mantém a proporção */
+}
+.Docstext-container {
+  display: flex;
+  flex-direction: column; /* Mantém título e subtítulo em coluna */
+  margin-left: 1%; /* Espaço entre a imagem e os textos */
+}
+
+.Docssubtitulo {
+  margin-top: 1%;
+  font-size: 200%;
+  font-weight: 400;
+  width: 90%;
+  letter-spacing: 0.2%;
+  color: white;
+}
+
+.Docstitulo {
+  font-size: 300%;
+  margin: 0 0 0.5vw 1vw;
+  color: white;
+}
+
+.Docsimagem-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 2vw;
+  right: 40vw;
+  width: 40%;
+  height: fit-content;
+}
+
+.DocsbgImage {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: -15vw;
+  right: 0;
+  width: 100%;
+  height: 70vw;
+  overflow: hidden;
+}
+
+.DocsbgImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@media (max-width: 1200px) {
+  .Docsbox-title {
+    margin: 10vw 10vw;
+    top: 4vw;
+  }
+
+  .Docssubtitulo {
+    font-size: 2vw;
+    width: 85%;
+    margin-top: vw;
+  }
+
+  .Docstitulo {
+    font-size: 4vw;
+    margin-bottom: 1vw;
+  }
+
+  .Docsimagem-container {
+    top: 13vw;
+    right: 2vw;
+  }
+
+  .DocsbgImage {
+    top: -10vw;
+  }
+
+  .DocsDocsImg {
+    width: 25%;
+    height: 25%;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .Docsbox-title {
+    margin: 12vw 10vw;
+    top: 4vw;
+  }
+
+  .Docssubtitulo {
+    font-size: 2.5vw;
+    width: 85%;
+    margin-top: vw;
+  }
+
+  .Docstitulo {
+    font-size: 5vw;
+    margin-bottom: 1vw;
+  }
+
+  .Docsimagem-container {
+    top: 13vw;
+    right: 2vw;
+  }
+
+  .DocsbgImage {
+    top: -10vw;
+  }
+
+  .DocsDocsImg {
+    width: 25%;
+    height: 25%;
+  }
+}
